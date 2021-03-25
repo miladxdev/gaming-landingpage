@@ -49,13 +49,16 @@ body {
 /* ------------------------------------- HEADER -------------------------------------*/
 
 .header {
-    text-align: center;
-    position: relative;
-    /* background:black; */
-    color:white;
-    margin-top: 10px;
-    border-radius: 10px;
-    overflow: hidden;
+  /* border: 1px solid red; */
+  height: 400px;
+  background-image: url("img/header/header.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 10px;
+  border-radius: 10px;
+  overflow: hidden;
   }
 
 .header .centered {
@@ -80,7 +83,7 @@ body {
   align-items: center; */
   position: relative;
   width: 100%;
-  padding: 20px 5px;
+  padding: 12px 5px;
   /* border: 1px solid red; */
   overflow: hidden;
   background-color: #fafafa; 
