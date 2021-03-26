@@ -1,5 +1,5 @@
 // show/hide navbar menu on phone
-function myFunction() {
+function dropMenu() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
         x.className += " responsive";
