@@ -223,13 +223,13 @@ section {
     background-color: white;
     padding:10px;
     margin-top:18px;
-    box-shadow: 0px 7px 16px 1px rgba(0,0,0,0.1);
+    box-shadow: 0px 4px 40px 0px rgba(0,0,0,0.1);
     font-size: 18px;
     border-radius: 10px;
     transition: 0.15s;   
 }
 .card:hover {
-      box-shadow: 0px 6px 16px 0px rgba(0,0,0,0.07);
+      box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.05);
       cursor: pointer; 
 }
 .cardinfo {
@@ -303,18 +303,24 @@ section {
         padding: 0;
 
     }
-    
+    #col-trend {
+    display: none;
+    }
 }
 @media (max-width: 800px) and (min-width: 700px) {
-    #leftside {
-        display: none;
-	
-    }
-    #maincon { width: 75%; }
+  #leftside {
+      display: none;
+  }
+  #col-main { width: 75%; }
 
+  #col-trend {
+    display: none;
+  }
+  #col-carousel {
+    width: 100%;
+  }
 
 }
-
 
 /* ------------------------------------- PAGINATION -------------------------------- */
 
@@ -461,19 +467,29 @@ section {
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 1s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 1s;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .5}
+  from {opacity: .8}
   to {opacity: 1}
 }
 
-@keyframes fade {
-  from {opacity: .5}
+/* @keyframes fade {
+  from {opacity: .8}
   to {opacity: 1}
+} */
+@keyframes fade {
+  from {
+    transform: translateY(-50%);
+    /* transform: scale(1.1); */
+  }
+  to {
+    transform: translateY(0%);
+    /* transform: scale(1); */
+  }
 }
 
 /* On smaller screens, decrease text size */
