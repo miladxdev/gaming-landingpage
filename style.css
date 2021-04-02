@@ -35,10 +35,10 @@
 }
 
 body {
-    font-family: 'BNazanin', '@Microsoft Yahei Light';
-    padding: 0;
-    background-color:#fafafa;
-    font-size: 16px;
+  font-family: 'BNazanin', '@Microsoft Yahei Light';
+  padding: 0 10px;
+  background-color:#fafafa;
+  font-size: 16px;
 }
 
 :root {
@@ -47,10 +47,17 @@ body {
 
 
 
-#page-wrap { /* to center the website */
-     max-width:1200px;
-     margin: 0 auto;
+.page-wrap { /* to center the website */
+  /* border: 1px solid blue; */
+  max-width: 1300px;
+  padding: 0 10px;
+  margin: 0 auto;
 }
+/* .page-wrap:after {
+  content: "";
+  display: table;
+  clear: both;
+} */
 
 /* ------------------------------------- HEADER -------------------------------------*/
 
@@ -155,14 +162,12 @@ input#search:focus { width: 250px; }
 
 /* ------------------------------------- MAIN CONTENT ------------------------------------- */
 
-section {
+section, main {
   margin-top: 20px;
 }
 
 .row {
   /* border: 1px solid red; */
-  max-width:1280px;
-  margin: 0 auto;
 }
 
 .row:after {
@@ -171,7 +176,7 @@ section {
   clear: both;
 }
 
-.row img {
+.row img , .page-wrap img {
   width:100%;
   height: auto;
   border-radius: 10px;
@@ -209,30 +214,32 @@ section {
   display: block;
   width: 100%;
 }
-.img-container .img-title {
+.img-title {
   position: absolute;
-  bottom: 10px;
-  left:5%;
-  right: 5%;
+  width: 80%;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
   color:white;
-  background: rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 2px 10px grey;
+
 }
 
 /* ------------------------------------- CARDS ------------------------------------- */
 .card {
-    position: relative;
-    background-color: white;
-    padding:10px;
-    margin-top:18px;
-    box-shadow: 0px 4px 40px 0px rgba(0,0,0,0.1);
-    font-size: 18px;
-    border-radius: 10px;
-    transition: 0.2s;   
+  position: relative;
+  background-color: white;
+  padding:10px;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 40px 0px rgba(0,0,0,0.1);
+  font-size: 18px;
+  border-radius: 10px;
+  transition: 0.2s;   
 }
 .card:hover {
-      box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.05);
-      cursor: pointer; 
+  box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.05);
+  cursor: pointer; 
 }
 .card-title {
   margin-bottom: .4rem;
@@ -425,19 +432,18 @@ section {
 
 }
 
-/* -------------------------------------- Slideshow -------------------------------------- */
+/* -------------------------------------- carousel */
 
 .carousel-container {
+  
   position: relative;
-  width: 100%;
-  border-radius: 10px;
-  overflow: hidden;
+  /* width: 100%; */
   box-shadow: 0px 4px 40px 0px rgba(0,0,0,0.1);
 }
 
 .carousel-container img { 
-  vertical-align: middle; 
-  border-radius:5px;
+  /* vertical-align: middle;  */
+  border-radius: 10px;
 }
 
 .carousel { display: none; }
@@ -452,24 +458,20 @@ section {
   top: 0;
 }
 
-.carousel-text {
-  color: #f2f2f2;
-  font-size: 16px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 10px;
-  width: 100%;
-  text-align: center;
-}
-
 .dots {
+  /* border: 2px dotted blue; */
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
   text-align:center;
+  z-index: 1;
 }
 
 .dot {
   height: 10px;
   width: 10px;
-  margin: 10px 2px;
+  margin: 0 2px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
@@ -489,7 +491,6 @@ section {
   animation-duration: 1s ease-in;
 }
 
-
 @-webkit-keyframes fade {
   from {opacity: .8}
   to {opacity: 1}
@@ -501,14 +502,15 @@ section {
 } */
 @keyframes fade {
   from {
-    transform: translateY(-80%);
-    /* transform: scale(1.1); */
+    /* transform: translateY(-80%); */
+    transform: scale(1.05);
   }
   to {
-    transform: translateY(0%);
-    /* transform: scale(1); */
+    /* transform: translateY(0%); */
+    transform: scale(1);
   }
 }
+
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
