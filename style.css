@@ -81,7 +81,7 @@ header {
   padding: 14px 7px;
   /* border: 1px solid red; */
   background-color: #fafafa; 
-  box-shadow: 0 3px 15px -1px #D6D6D6;
+  box-shadow: 0 0px 40px 0px rgba(0,0,0,0.1);
   border-radius: 10px;
  
 }
@@ -238,7 +238,7 @@ section, main {
   transition: 0.2s;   
 }
 .card:hover {
-  box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.05);
+  box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.04);
   cursor: pointer; 
 }
 .card-title {
@@ -259,12 +259,25 @@ section, main {
   margin-bottom: .8rem;
 }
 .card-footer {
-     /* position:absolute; */
-     font-size:14px;
-     font-family: 'PT Sans', pt;
-     width:100%;
-     color:grey;
+  font-size: 14px;
+  font-family: 'PT Sans', pt;
+  
+  color:grey;
+  direction: ltr;
 }
+.card-footer > i:not(:last-child) {
+  padding-right: 20px;
+}
+.card-footer i:last-child {
+  float: right;
+}
+
+.card-list {
+  padding: 10px 0;
+  /* border-top: 1px dashed grey; */
+  border-bottom: 1px dashed grey;
+}
+
 
 [class*="comment-"] {
      position:absolute;
@@ -281,10 +294,6 @@ section, main {
      font-size:14px;
 }
 
-.card i {
-      padding: 10px;
-      font-size:18px;
-  }
 
 .card a {
       text-decoration: none;
@@ -293,7 +302,7 @@ section, main {
   }
 
 .card hr { opacity: 0.5; }
-.card h4,h5,p { margin: 0; }
+
 
 .card p:hover { color : #E4212A; }
 
