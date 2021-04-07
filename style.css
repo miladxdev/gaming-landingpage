@@ -1,26 +1,25 @@
+@font-face {
+  font-family: 'Far.Nazanin';
+  src: url('http://www.fontfarsi.ir/Content/Fonts/EOT/Far_Nazanin.eot');
+  src: local('☺'),
+       url('http://www.fontfarsi.ir/Content/Fonts/WOFF/Far_Nazanin.woff') format('woff'),
+       url('http://www.fontfarsi.ir/Content/Fonts/TTF/Far_Nazanin.ttf')   format('truetype'),
+       url('http://www.fontfarsi.ir/Content/Fonts/SVG/Far_Nazanin.svg')   format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
 @font-face {
-        font-family: 'Far.Nazanin';
-        src:        url('http://www.fontfarsi.ir/Content/Fonts/EOT/Far_Nazanin.eot');
-        src: local('☺'),
-                    url('http://www.fontfarsi.ir/Content/Fonts/WOFF/Far_Nazanin.woff') format('woff'),
-                    url('http://www.fontfarsi.ir/Content/Fonts/TTF/Far_Nazanin.ttf') format('truetype'),
-                    url('http://www.fontfarsi.ir/Content/Fonts/SVG/Far_Nazanin.svg') format('svg');
-        font-weight: normal;
-        font-style: normal;
-        }
-
-@font-face {
-    font-family:'BYekan';/*تعریف یک نام برای فونت*/
-    src:url('font/BYekan.eot');/*اکسپلورر 9 به بعد*/
-    src:local('bYekan'),/*بررسی نصب بودن فونت در سیستم کاربر*/
-        local('b Yekan'),/*برای برخی از مرورگرها مانند سافاری*/
-        url('font/BYekan.eot?#iefix') format('embedded-opentype'),/*هک برای اکسپلورر 8 و ماقبل*/
-        url('font/BYekan.woff') format('woff'),/*مرورگر های جدید*/
-        url('font/BYekan.ttf') format('truetype'),/*تمام مرورگرها به جزء اکسپلورر*/
-        url('font/BYekan.svg#BYekan') format('svg');/*نسخه های قدیمی سیستم عامل iOS*/
-    font-style:normal;
-    font-weight:normal;
+  font-family: 'BYekan';/*تعریف یک نام برای فونت*/
+  src: url('font/BYekan.eot');/*اکسپلورر 9 به بعد*/
+  src: local('bYekan'),/*بررسی نصب بودن فونت در سیستم کاربر*/
+       local('b Yekan'),/*برای برخی از مرورگرها مانند سافاری*/
+       url('font/BYekan.eot?#iefix') format('embedded-opentype'),/*هک برای اکسپلورر 8 و ماقبل*/
+       url('font/BYekan.woff') format('woff'),/*مرورگر های جدید*/
+       url('font/BYekan.ttf') format('truetype'),/*تمام مرورگرها به جزء اکسپلورر*/
+       url('font/BYekan.svg#BYekan') format('svg');/*نسخه های قدیمی سیستم عامل iOS*/
+  font-style:normal;
+  font-weight:normal;
 }
 
 @font-face {
@@ -29,9 +28,14 @@
 }
 
 * {
-    box-sizing:border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --background-color: #fafafa;
+  --primary-color: #FFAF1C;
 }
 
 body {
@@ -41,39 +45,32 @@ body {
   font-size: 16px;
 }
 
-:root {
-  --background-color: #fafafa;
-}
-
-
-
 .page-wrap { /* to center the website */
   /* border: 1px solid blue; */
   max-width: 1300px;
   padding: 0 10px;
   margin: 0 auto;
 }
-/* .page-wrap:after {
-  content: "";
-  display: table;
-  clear: both;
-} */
 
 /* ------------------------------------- HEADER -------------------------------------*/
 
 header {
   /* border: 1px solid red; */
-  height: 400px;
+  /* height: 400px; */
   margin-top: 20px;
-  background-image: url("img/header/header.jpg");
+  /* background-image: url("img/header/header.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   border-radius: 10px;
   overflow: hidden;
 }
 
+.header-img {
+  display: block;
+  width: 100%;
+}
 
 /* ------------------------------------- TOP NAV ------------------------------------- */
 .topnav {
@@ -83,7 +80,7 @@ header {
   background-color: #fafafa; 
   box-shadow: 0 0px 40px 0px rgba(0,0,0,0.1);
   border-radius: 10px;
- 
+
 }
 
 .topnav a {
@@ -184,28 +181,27 @@ section, main {
 }
 
 .row img:hover {
-    cursor: pointer;
-    -webkit-filter: grayscale(70%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(70%);
+  cursor: pointer;
+  -webkit-filter: grayscale(80%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(80%);
 }
 
 [class*="col-"] {
   float: left;
-  padding: 8px;
+  padding: 0 10px;
 }
-
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+.col-1  { width: 8.33%;  }
+.col-2  { width: 16.66%; }
+.col-3  { width: 25%;    }
+.col-4  { width: 33.33%; }
+.col-5  { width: 41.66%; }
+.col-6  { width: 50%;    }
+.col-7  { width: 58.33%; }
+.col-8  { width: 66.66%; }
+.col-9  { width: 75%;    }
+.col-10 { width: 83.33%; }
+.col-11 { width: 91.66%; }
+.col-12 { width: 100%;   }
 
 .img-container {
   position: relative;
@@ -258,6 +254,11 @@ section, main {
   /* border: 1px solid red; */
   margin-bottom: .8rem;
 }
+.card-header { 
+  background: var(--primary-color);
+  color: white;
+  text-align: center;
+}
 .card-footer {
   font-size: 14px;
   font-family: 'PT Sans', pt;
@@ -273,27 +274,22 @@ section, main {
 }
 
 .card-list {
-  padding: 10px 0;
-  /* border-top: 1px dashed grey; */
-  border-bottom: 1px dashed grey;
+  padding: 14px 0;
+}
+.card-list:not(:last-child) {
+  border-bottom: 1px dashed rgb(174, 174, 174);
 }
 
 
-[class*="comment-"] {
-     position:absolute;
-     top:-10px;
-     right:-10px;
-     background:#FF4242;
-     border-radius:50%;
-     color:white;
-     text-align: center;
-}
-
-.comment-card {
-     width:22px; height:22px;
-     font-size:14px;
-}
-
+/* .img-container:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right:0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(45deg, #ffa70335, #bf301030);
+} */
 
 .card a {
       text-decoration: none;
@@ -306,40 +302,19 @@ section, main {
 
 .card p:hover { color : #E4212A; }
 
- /* ---------------- Small cards */
- 
-  /*.mo-row {
-         overflow: hidden;
-         margin:10px 0;
-         font-size: 16px;
-   }
-   .mo-row .col-3 img {
-       width:100%;
-   }
-
-  .mo-row .col-3 {
-      width:30%;
-      float:left;
-      padding: 10px;
-  }
-
-  .mo-row .col-9 {
-      width:70%;
-      float:left;
-      padding:5px;
-  }  */
 
 /* ------------------------------------- RESPONSIVE ------------------------------------- */
+
 @media (max-width: 700px) {
     .col-6, .col-3 {
         width: 100%;
         padding: 0;
-
     }
     #col-trend {
     display: none;
     }
 }
+
 @media (max-width: 800px) and (min-width: 700px) {
   #leftside {
       display: none;
