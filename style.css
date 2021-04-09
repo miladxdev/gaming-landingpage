@@ -38,6 +38,13 @@
   --primary-color: #FFAF1C;
 }
 
+::-moz-selection {
+  background-color: var(--primary-color);
+}
+::selection {
+  background-color: var(--primary-color);
+}
+
 body {
   font-family: 'BNazanin', '@Microsoft Yahei Light';
   padding: 0 10px;
@@ -80,7 +87,6 @@ header {
   background-color: #fafafa; 
   box-shadow: 0 0px 40px 0px rgba(0,0,0,0.1);
   border-radius: 10px;
-
 }
 
 .topnav a {
@@ -237,6 +243,7 @@ section, main {
   box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.04);
   cursor: pointer; 
 }
+
 .card-title {
   margin-bottom: .4rem;
 }
@@ -280,7 +287,6 @@ section, main {
   border-bottom: 1px dashed rgb(174, 174, 174);
 }
 
-
 /* .img-container:after {
   position: absolute;
   content: "";
@@ -288,19 +294,17 @@ section, main {
   right:0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(45deg, #ffa70335, #bf301030);
+  background: rgba(255, 176, 28, 0.05);
 } */
 
 .card a {
-      text-decoration: none;
-      color: black;
-      font-size:18px;
-  }
+  text-decoration: none;
+  color: black;
+  font-size:18px;
+}
 
-.card hr { opacity: 0.5; }
+.card hr { opacity: 0.4; }
 
-
-.card p:hover { color : #E4212A; }
 
 
 /* ------------------------------------- RESPONSIVE ------------------------------------- */
@@ -332,45 +336,37 @@ section, main {
 
 /* ------------------------------------- PAGINATION -------------------------------- */
 
-.pagcontainer {
-  
-      text-align: center;
-      margin: 20px 0;
-     
-      font-family: "PT Sans";
-  }
-
 .pagination {
-  display: inline-block; 
-  overflow: hidden;
-  padding: 10px;
-  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  direction: ltr;
 }
 
-.pagination a {
+.pag-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #333333;
   float: left;
-  
-  text-decoration: none;
-  transition: background-color .5s;
   margin: 0 5px;
-  background:#e0e0e0;
-  box-shadow: 0 0 8px 0 #bbbbbb;
+  width: 40px; 
+  height:40px;
+  background:rgb(238, 238, 238);
+  color: #333333;
+  text-decoration: none;
+  transition: background-color .2s;
   border-radius: 50%;
-  font-size: 16px;
-  width: 32px; height:32px;
+  font-size: 1.2rem;
 }
 
-.pagination a:hover {
-    background: #EF4E53;
-    color: white;
+.pag-link:hover {
+  background: var(--primary-color);
+  color: white;
 }
 
-#nextpagecolor {
-    background:#f34545;
+.next-page,
+.previous-page {
+  background: var(--primary-color);
+  color: white;
 }
 
 
