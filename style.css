@@ -40,9 +40,11 @@
 
 ::-moz-selection {
   background-color: var(--primary-color);
+  color: black;
 }
 ::selection {
   background-color: var(--primary-color);
+  color: black;
 }
 
 body {
@@ -164,6 +166,10 @@ input#search:focus { width: 250px; }
 
 
 /* ------------------------------------- MAIN CONTENT ------------------------------------- */
+.main-section {
+  /* border: 1px solid red; */
+  margin-top: 80px;
+}
 
 section, main {
   margin-top: 20px;
@@ -266,6 +272,7 @@ section, main {
   color: white;
   text-align: center;
 }
+
 .card-footer {
   font-size: 14px;
   font-family: 'PT Sans', pt;
@@ -287,6 +294,10 @@ section, main {
   border-bottom: 1px dashed rgb(174, 174, 174);
 }
 
+.card-row {
+  /* border: 1px solid red; */
+  margin-bottom: .8rem;
+}
 /* .img-container:after {
   position: absolute;
   content: "";
@@ -310,13 +321,13 @@ section, main {
 /* ------------------------------------- RESPONSIVE ------------------------------------- */
 
 @media (max-width: 700px) {
-    .col-6, .col-3 {
-        width: 100%;
-        padding: 0;
-    }
-    #col-trend {
-    display: none;
-    }
+  .col-6, .col-3 {
+      width: 100%;
+      padding: 0;
+  }
+  #col-trend {
+  display: none;
+  }
 }
 
 @media (max-width: 800px) and (min-width: 700px) {
@@ -337,6 +348,8 @@ section, main {
 /* ------------------------------------- PAGINATION -------------------------------- */
 
 .pagination {
+  /* border: 1px solid red; */
+  margin: 70px;
   display: flex;
   justify-content: center;
   direction: ltr;
@@ -371,44 +384,53 @@ section, main {
 
 
 /* -------------------------------------- FOOTER -------------------------------------- */
- .footer {
-      background: #121212;
-      color: #f2f2f2;
-      font-size: 16px;
-      box-shadow: 0 8px 20px -2px #808080;
-      border: 1px solid #CCCCCC;
-      margin-top: 20px;
-  }
+footer {
+  background: #131316;
+  color: #f2f2f2;
+  font-size: 16px;
+  box-shadow: 0 8px 20px -2px #808080;
+  border-radius: 10px 10px 0 0;
+  padding: 40px 10px 10px 10px;
+}
 
-.footer hr {
-      width: 90%;
-      opacity: 0.5;
-  }
+.footer-title {
+  padding: 20px 0;
+  color: var(--primary-color);
+}
+.footer-list {
+  display: block;
+  margin-bottom: 5px;
+}
 
-  .footer i {
-      padding: 10px;
-  }
+.footer-hr {
+  background: lightcyan;
+  opacity: 0.1;
+  margin:  10px 0;
+}
 
-  .footer a {
-      text-decoration: none;
-      color: white;
-  }
+.footer-social {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
 
+.footer-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.2rem;
+  width: 50px;
+  height: 50px;
+  color: black;
+  background: var(--primary-color);
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+@media screen and (max-width:700px) {
   .footer .col25 {
-         float: left;
-         width: 25%;
-         padding: 10px;
+    width: 100%;
   }
-
-  .footer:after {
-    content: "";
-    display: table;
-    clear: both;}
-
-     @media screen and (max-width:700px) {
-    .footer .col25 {
-        width: 100%;
-    }
 
 }
 
