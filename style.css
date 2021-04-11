@@ -51,13 +51,14 @@ body {
   font-family: 'BNazanin', '@Microsoft Yahei Light';
   padding: 0 10px;
   background-color:#fafafa;
-  font-size: 16px;
+  font-size: 1rem;
+  line-height: 28px;
 }
 
 .page-wrap { /* to center the website */
   /* border: 1px solid blue; */
   max-width: 1300px;
-  padding: 0 10px;
+  /* padding: 0 10px; */
   margin: 0 auto;
 }
 
@@ -66,7 +67,7 @@ body {
 header {
   /* border: 1px solid red; */
   /* height: 400px; */
-  margin-top: 20px;
+  /* padding: 10px; */
   /* background-image: url("img/header/header.jpg");
   background-size: cover;
   background-attachment: fixed;
@@ -79,6 +80,7 @@ header {
 .header-img {
   display: block;
   width: 100%;
+  border-radius: 10px;
 }
 
 /* ------------------------------------- TOP NAV ------------------------------------- */
@@ -166,10 +168,6 @@ input#search:focus { width: 250px; }
 
 
 /* ------------------------------------- MAIN CONTENT ------------------------------------- */
-.main-section {
-  /* border: 1px solid red; */
-  margin-top: 80px;
-}
 
 section, main {
   margin-top: 20px;
@@ -183,6 +181,10 @@ section, main {
   content: "";
   display: table;
   clear: both;
+}
+
+.mt-20 {
+  margin-top: 20px;
 }
 
 .row img , .page-wrap img {
@@ -225,7 +227,7 @@ section, main {
 .img-title {
   position: absolute;
   width: 80%;
-  bottom: 20px;
+  bottom: 28px;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -238,7 +240,7 @@ section, main {
 .card {
   position: relative;
   background-color: white;
-  padding:10px;
+  padding: 10px;
   margin-bottom: 20px;
   box-shadow: 0px 4px 40px 0px rgba(0,0,0,0.1);
   font-size: 18px;
@@ -269,7 +271,7 @@ section, main {
 }
 .card-header { 
   background: var(--primary-color);
-  color: white;
+  color: black;
   text-align: center;
 }
 
@@ -349,7 +351,6 @@ section, main {
 
 .pagination {
   /* border: 1px solid red; */
-  margin: 70px;
   display: flex;
   justify-content: center;
   direction: ltr;
@@ -363,17 +364,16 @@ section, main {
   margin: 0 5px;
   width: 40px; 
   height:40px;
-  background:rgb(238, 238, 238);
+  background:rgb(226, 226, 226);
   color: #333333;
   text-decoration: none;
   transition: background-color .2s;
   border-radius: 50%;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .pag-link:hover {
   background: var(--primary-color);
-  color: white;
 }
 
 .next-page,
@@ -399,13 +399,24 @@ footer {
 }
 .footer-list {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .footer-hr {
   background: lightcyan;
   opacity: 0.1;
-  margin:  10px 0;
+  margin-top: 20px;
+}
+
+.footer-website-name {
+  font-size: 40px;
+  
+  font-family: 'Rajdhani', sans-serif;
+  margin-top: 20px;
+}
+
+.footer-copy-right {
+  margin-top: 20px;
 }
 
 .footer-social {
@@ -440,6 +451,7 @@ footer {
   
   position: relative;
   /* width: 100%; */
+  font-size: 24px;
   box-shadow: 0px 4px 40px 0px rgba(0,0,0,0.1);
 }
 
