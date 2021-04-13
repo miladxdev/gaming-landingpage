@@ -85,6 +85,7 @@ header {
 
 /* ------------------------------------- TOP NAV ------------------------------------- */
 .topnav {
+  position: sticky;
   margin-top: 20px;;
   padding: 14px 7px;
   /* border: 1px solid red; */
@@ -92,7 +93,9 @@ header {
   box-shadow: 0 0px 40px 0px rgba(0,0,0,0.1);
   border-radius: 10px;
 }
-
+.topnav-active {
+  background: var(--primary-color);
+}
 .topnav a {
   display: block;
   float: right;
@@ -105,7 +108,10 @@ header {
   transition: background-color .2s;
 }
 
-.topnav a:hover { background-color:#e2e2e2; }
+.topnav a:hover { 
+  /* background-color:#e2e2e2; */
+  color: grey;
+}
 
 .topnav .drop-icon {
   display: none;
@@ -131,16 +137,23 @@ header {
 }
 
 input#search {
-  width: 30px;
-  padding: 12px 40px;
+  width: 40px;
+  padding: 14px 10px 14px 40px;
   outline: none;
   border: none;
   border-radius: 10px;
   background: #eeeeee;
-  direction: ltr;
+  direction: rtl;
   transition: width 0.4s ease-in-out ;
 }
-input#search:focus { width: 250px; }
+input#search:focus { width: 150px; }
+
+
+@media (max-width: 800px) and (min-width: 700px) {
+  .topnav {
+    font-size: 0.8rem;
+  }
+}
 
 @media screen and (max-width: 700px) {
   .topnav a:not(:first-child) {display: none;}
@@ -159,6 +172,7 @@ input#search:focus { width: 250px; }
     top: 14px;
     
   }
+ 
   .topnav.responsive a {
     float: none;
     display: block;
@@ -173,9 +187,9 @@ section, main {
   margin-top: 20px;
 }
 
-.row {
-  /* border: 1px solid red; */
-}
+/* .row {
+  border: 1px solid red;
+} */
 
 .row:after {
   content: "";
