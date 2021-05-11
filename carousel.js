@@ -1,4 +1,4 @@
-// show/hide navbar menu on phone
+// show and hide navbar menu on phone
 function dropMenu() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
@@ -22,11 +22,11 @@ function showSlides() {
        slides[i].style.display = "none";
     }
     slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}
+    if (slideIndex > slides.length) { slideIndex = 1 }
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 5000); // Change image every 7 seconds
+    setTimeout(showSlides, 5000); // Change image every 5 seconds
 }
