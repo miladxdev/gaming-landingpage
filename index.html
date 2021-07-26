@@ -1,532 +1,497 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 
 <html dir="rtl" lang="fa">
+  <html>
+    <head>
+      <!-- website fave icon -->
+      <link rel="shortcut icon" type="image/x-icon" href="img/faveicon.png" />
+      <!-- font awesome icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+      <meta charset="UTF-8" />
+      <meta name="description" content="Video Games Website" />
+      <meta name="keyword" content="Game,Tech,Movie,News" />
+      <meta name="author" content="Milad" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- Google fonts -->
+      <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet" />
+      <!-- owlCarousel style -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+      <!-- owlCarousel theme -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+      <!-- Style -->
+      <link rel="stylesheet" href="style.css" />
 
-<html>
+      <title>vgames | Latest video games news</title>
+    </head>
 
-<head>
-
-  <link rel="shortcut icon" type="image/x-icon" href="/headerimg/icons8-xbox-128.png"> <!-- website fave icom -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- font awesome icons -->
-  <meta charset="UTF-8">
-  <meta name="description" content="Video Games Website">
-  <meta name="keyword" content="Game,Tech,Movie,News">
-  <meta name="author" content="Milad">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <title>vgames</title>
-
-</head>
-
-<body>
-
-<nav class="topnav" id="myTopnav">
-  <div class="page-wrap">
-    <div class="row">
-      <a href="#" class="topnav-active"> خانه </a>
-      <a href="#"> اخبار </a>
-      <a href="#"> مقالات </a>
-      <a href="#"> معرفی و بررسی </a>
-      <a href="#"> ویدیو </a>
-      <a href="#"> آموزش </a>
-      <a href="#"> سینما </a>
-      <a href="#"> تماس با ما </a>
-      <a href="#" class="drop-icon" onclick="dropMenu()">
-        <i class="fa fa-bars"></i>
-      </a>
-      <img src="img/logo/d3-logo.svg" style="width:45px" class="logo">
-      <div class="search">
-        <i class="fa fa-search"></i>
-        <input type="text" name="search" id="search" placeholder="جستجو" autocomplete="off">
-      </div>
-    </div>
-  </div>
-</nav>
-
-<header class="mt-20">
-  <img class="header-img" src="./img/header/header.jpg" alt="header">
-</header>
-
-<div class="page-wrap">
-
-  <section>
-
-    <div class="row">
-        
-      <div class="col-3" id="col-trend">
-        <div class="img-container" style="margin-bottom: 8px">
-          <img src="img/slide-show/side/side1.jpg" alt="the last of us">
-          <p class="img-title">
-            پوسته رایگان بازی The Last of Us Part II در دسترس کاربران پلی استیشن 4 قرار گرفت 
-          </p>
-        </div>
-        <div class="img-container">
-          <img src="img/slide-show/side/side2.jpg" alt="spiderman">
-          <p class="img-title">
-            بازی Spider-Man سریع‌ترین فروش را در بین بازی‌های ابرقهرمانی در آمریکا داشته است 
-          </p>
-        </div>
-      </div>
-
-      <div class="col-6" id="col-carousel">
-
-        <div class="carousel-container">
-
-          <div class="carousel fade">
-            <div class="img-number"> 1 / 4 </div>
-            <div class="img-container">
-              <img src="img/slide-show/image4.jpg">
-              <p class="img-title">
-                گیم پلی بازی Call of Duty: Modern Warfare
-              </p>
+    <body>
+      <nav class="topnav" id="myTopnav">
+        <div class="page-wrap">
+          <div class="row">
+            <a href="#" class="topnav-active"> خانه </a>
+            <a href="#"> اخبار </a>
+            <a href="#"> مقالات </a>
+            <a href="#"> معرفی و بررسی </a>
+            <a href="#"> ویدیو </a>
+            <a href="#"> آموزش </a>
+            <a href="#"> سینما </a>
+            <a href="#"> تماس با ما </a>
+            <a href="#" class="drop-icon" onclick="dropMenu()">
+              <i class="fa fa-bars"></i>
+            </a>
+            <img src="img/logo/d3-logo.svg" style="width: 45px" class="logo" />
+            <div class="search">
+              <i class="fa fa-search"></i>
+              <input type="text" name="search" id="search" placeholder="جستجو" autocomplete="off" />
             </div>
           </div>
-
-          <div class="carousel fade">
-            <div class="img-number"> 2 / 4 </div>
-            <div class="img-container">
-              <img src="img/slide-show/image1.jpg">
-              <p class="img-title">
-                معرفی بازی Hellblade: Senua's Sacrifice
-              </p>
-            </div>
-          </div>
-
-          <div class="carousel fade">
-            <div class="img-number"> 3 / 4 </div>
-            <div class="img-container">
-              <img src="img/slide-show/image2.jpg">
-              <p class="img-title">
-                شاید بازی Death Stranding آن چیزی نباشد که تصور می‌کنیم 
-              </p>
-          </div>
-          </div>
-
-          <div class="carousel fade">
-            <div class="img-number"> 4 / 4 </div>
-            <div class="img-container">
-              <img src="img/slide-show/image3.jpg">
-              <p class="img-title">
-                مروری بر سری بازی های Tomb Raider
-              </p>
-            </div>
-          </div>
-
-          <div class="dots">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-          </div>
-        
         </div>
+      </nav>
 
-      </div>
+      <header class="mt-20">
+        <img class="header-img" src="./img/header/header.jpg" alt="header" />
+      </header>
 
-      <div class="col-3" id="col-trend">
-        <div class="img-container" style="margin-bottom: 8px">
-          <img src="img/slide-show/side/side3.jpg" alt="cyberpunk" style="width:100%;"  />
-          <p class="img-title">
-            پیش‌بینی تحلیلگران در مورد عرضه بازی Cyberpunk 2077 در سه ماهه چهارم 2019 
-          </p>
-        </div>
-        <div class="img-container">
-          <img src="img/slide-show/side/side4.jpg" alt="tombRaider" style="width:100%;"  />
-          <p class="img-title">
-            نسخه ویژه بازی Anthem با انتشار تریلری معرفی شد 
-          </p>
-        </div>
-      </div>
-    </div>
-
-  </section>
-
-  <div class="row mt-20">
-
-    <aside>
-
-      <div class="col-3" id="leftside">
-        
-        <div class="card card-header">
-          <div class="center">
-            <h4>دنبال کنید</h4>
-            <i class="fa fa-instagram" style="position: relative"></i>
-            <i class="fa fa-twitter" style="position: relative"></i>
-            <i class="fa fa-github" style="position: relative"></i>
-          </div>
-        </div>
-
-        <div class="card">
-          <h4 class="card-list-title">آخرین اخبار</h4>
-          <div class="card-list">
-            <img src="img/card-list/PS5.jpg">
-            <p class="card-list-text">تاریخ رونمایی از کنسول پلی‌استیشن ۵ رسما مشخص شد</p>
-          </div>
-          <div class="card-list">
-            <img src="img/card-list/BF6.jpg">
-            <p class="card-list-text">اشاره شایعات جدید Battlefield 6 به پشتیبانی از ۱۲۸ بازیکن در هر بازی</p>
-          </div>
-          <div class="card-list">
-            <img src="img/card-list/MGSV.jpg">
-            <p class="card-list-text">احتمال واگذاری لایسنس بازی Metal Gear Solid توسط کونامی</p>
-          </div>
-          <div class="card-list">
-            <img src="img/card-list/outriders.jpg">
-            <p class="card-list-text">جدول فروش هفتگی انگلستان: خروج Outriders از جمع ۱۰ بازی پرفروش</p>
-          </div>
-          <div class="card-list">
-            <img src="img/card-list/nomadland.jpg">
-            <p class="card-list-text">برندگان جوایز فیلم بفتا 2021؛ Nomadland بهترین فیلم سال</p>
-          </div>
-          <div class="card-list">
-            <img src="img/card-list/dimitrescu.jpg">
-            <p class="card-list-text">ضرورت تکنولوژی صدای سه بعدی PS5 در آینده‌ی بازی‌ های ترسناک</p>
-          </div>
-          <div class="card-list">
-            <img src="img/card-list/outriders2.jpg">
-            <p class="card-list-text">آپدیت بعدی Outriders برای رفع مشکل کراس پلی بازی</p>
-          </div>
-          
-        </div>
-     
-        <div class="card card-header" style="box-shadow:none;">
-          <h4> اخبار سینما</h4>
-        </div>
-
-        <div class="card">
-          <div class="card-img">
-            <img src="img/left-side/blackwidow.jpg" alt="gta-doc">
-          </div>
-          <p class="card-text"> تاریخ اکران فیلم Black Widow و The Eternals فاش شد </p>
-        </div>
-
-        <div class="card">
-          <div class="card-img">
-            <img src="img/left-side/terminator.jpg" alt="gta-doc" />
-          </div>
-          <p class="card-text"> تاریخ اکران فیلم Terminator 6 بار دیگر تغییر کرد </p>
-        </div>
-
-        <div class="card">
-          <div class="card-img">
-            <img src="img/left-side/interstellar.jpg" alt="interstellar" />
-          </div>
-          <p class="card-text"> نقدر فیلم Interstellar</p>
-        </div>
-
-      </div>
-    
-    </aside>
-    
-    <main>
-
-      <div class="col-6" id="col-main">
-
-        <h4 class="card card-header">جدید‌ترین مطالب</h4>
-
-        <article>
-
-          <div class="card">
-            <div class="card-tags">
-              <div class="card-tag">XBOX ONE</div>
-              <div class="card-tag">WITCHER3</div>
-              <div class="card-tag">PC</div>
-            </div>
-            <div class="card-img">
-              <img src="img/main-post/witcher3.jpg" alt="Witcher 3">
-            </div>
-            <h3 class="card-title"> تخفیف50درصدی بازیهای استیم به مناسبت جمعه سیاه </h3>
-            <h5 class="card-subtitle">Title description, Nov 30, 2018</h5>
-            <p class="card-text">
-              در جریان رویداد بلک فرایدی، دو بازی Red Dead Redemption 2 و Call of Duty: Black Ops 4، عامل اصلی رشد خریدهای دیجیتالی کاربران بوده‌اند.
-            </p> 
-            <div class="card-footer">
-              <i class="fa fa-user"> Milad</i>
-              <i class="fa fa-comments-o"> 6</i>
-              <i class="fa fa-heart-o"> 22</i>
-            </div>
-          </div>
-
-        </article>
-
-        <article>
-          <div class="card">
-            <div class="card-tags">
-              <div class="card-tag">DOOM ETERNAL</div>
-              <div class="card-tag">PC</div>
-            </div>
-            <div class="card-img">
-              <img src="img/main-post/doom-eternal.jpg" alt="DOOM">
-            </div>
-            <h3 class="card-title"> بازگشت هیجان و دیوانگی مروری بر نقدها Doom Eternal </h3>
-            <h5 class="card-subtitle">Title description, Dec 7, 2018</h5>
-            <p class="card-text">
-              بازگشت هیجان و دیوانگی. مروری بر نقدها و نمرات بازی doom enternal. کمپانی bethesda با یکی از بهترین و هیجان انگیز ترید بازی شوتر برمیگردد. 
-            </p>
-            <div class="card-footer">
-              <i class="fa fa-user"> Milad</i>
-              <i class="fa fa-comments-o"> 2</i>
-              <i class="fa fa-heart-o"> 5</i>
-            </div>
-          </div>
-        </article>
-
-        <article>
-
-          <div class="card">
-            <h3 class="card-title">بررسی بازی Red Dead Redemption 2</h3>
-            <h5 class="card-subtitle">Title description, Dec 7, 2018</h5>
-            <div class="row card-row">
-              <div class="col-8">
-                <p class="card-text">
-                  راک‌استار گیمز همیشه هنرش را در شگفت‌زده کردن مخاطبان نشان داده است؛ چه وقتی که با نسخه‌های اول GTA یک تجربه جهان‌باز
-                  بی‌مانند تا آن زمان را ارائه کرد.
-                </p>   
+      <div class="page-wrap">
+        <section>
+          <div class="row">
+            <div class="col-3" id="col-trend">
+              <div class="img-container" style="margin-bottom: 8px">
+                <img src="img/slide-show/side/side1.jpg" alt="the last of us" />
+                <p class="img-title">پوسته رایگان بازی The Last of Us Part II در دسترس کاربران پلی استیشن 4 قرار گرفت</p>
               </div>
-              <div class="col-4">
-                <div class="card-img">
-                  <img src="img/main-post/reddead.jpg" alt="Red dead 2">
+              <div class="img-container">
+                <img src="img/slide-show/side/side2.jpg" alt="spiderman" />
+                <p class="img-title">بازی Spider-Man سریع‌ترین فروش را در بین بازی‌های ابرقهرمانی در آمریکا داشته است</p>
+              </div>
+            </div>
+
+            <div class="col-6" id="col-carousel">
+              <div class="carousel-container">
+                <div class="mySlides fade">
+                  <img src="img/slide-show/image1.jpg" alt="slide" />
+                  <div class="number">1 / 4</div>
+                  <div class="text">نقد و بررسی بازی Hellblade</div>
+                </div>
+
+                <div class="mySlides fade">
+                  <img src="img/slide-show/image2.jpg" alt="slide" />
+                  <div class="number">2 / 4</div>
+                  <div class="text">بازی جدید کوجیما</div>
+                </div>
+
+                <div class="mySlides fade">
+                  <img src="img/slide-show/image3.jpg" alt="slide" />
+                  <div class="number">3 / 4</div>
+                  <div class="text">داستان بازی Tomb Raider</div>
+                </div>
+
+                <div class="mySlides fade">
+                  <img src="img/slide-show/image4.jpg" alt="slide" />
+                  <div class="number">4 / 4</div>
+                  <div class="text">تریلر جدید بازی COD: Coldwar</div>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="prevSlide()">&#10094;</a>
+                <a class="next" onclick="nextSlide()">&#10095;</a>
+
+                <!-- The dots/circles -->
+                <div class="dots-container">
+                  <span class="dots" onclick="currentSlide(1)"></span>
+                  <span class="dots" onclick="currentSlide(2)"></span>
+                  <span class="dots" onclick="currentSlide(3)"></span>
+                  <span class="dots" onclick="currentSlide(4)"></span>
                 </div>
               </div>
             </div>
-            <div class="card-footer">
-              <i class="fa fa-user"> Milad</i>
-              <i class="fa fa-comments-o"> 12</i>
-              <i class="fa fa-heart-o"> 45</i>
+
+            <div class="col-3" id="col-trend">
+              <div class="img-container" style="margin-bottom: 8px">
+                <img src="img/slide-show/side/side3.jpg" alt="cyberpunk" style="width: 100%" />
+                <p class="img-title">پیش‌بینی تحلیلگران در مورد عرضه بازی Cyberpunk 2077 در سه ماهه چهارم 2019</p>
+              </div>
+              <div class="img-container">
+                <img src="img/slide-show/side/side4.jpg" alt="tombRaider" style="width: 100%" />
+                <p class="img-title">نسخه ویژه بازی Anthem با انتشار تریلری معرفی شد</p>
+              </div>
             </div>
           </div>
-        
-        </article>
+        </section>
 
-        <article>
-          <div class="card">
-            <div class="card-tags">
-              <div class="card-tag">BLAIR WITCH</div>
-              <div class="card-tag">NINTENDO</div>
-              <div class="card-tag">PS4</div>
+        <div class="row mt-20">
+          <aside>
+            <div class="col-3" id="leftside">
+              <div class="card card-header">
+                <div class="center">
+                  <h4>دنبال کنید</h4>
+                  <i class="fa fa-instagram" style="position: relative"></i>
+                  <i class="fa fa-twitter" style="position: relative"></i>
+                  <i class="fa fa-github" style="position: relative"></i>
+                </div>
+              </div>
+
+              <div class="card">
+                <h4 class="card-list-title">آخرین اخبار</h4>
+                <div class="card-list">
+                  <img src="img/card-list/PS5.jpg" />
+                  <p class="card-list-text">تاریخ رونمایی از کنسول پلی‌استیشن ۵ رسما مشخص شد</p>
+                </div>
+                <div class="card-list">
+                  <img src="img/card-list/BF6.jpg" />
+                  <p class="card-list-text">اشاره شایعات جدید Battlefield 6 به پشتیبانی از ۱۲۸ بازیکن در هر بازی</p>
+                </div>
+                <div class="card-list">
+                  <img src="img/card-list/MGSV.jpg" />
+                  <p class="card-list-text">احتمال واگذاری لایسنس بازی Metal Gear Solid توسط کونامی</p>
+                </div>
+                <div class="card-list">
+                  <img src="img/card-list/outriders.jpg" />
+                  <p class="card-list-text">جدول فروش هفتگی انگلستان: خروج Outriders از جمع ۱۰ بازی پرفروش</p>
+                </div>
+                <div class="card-list">
+                  <img src="img/card-list/nomadland.jpg" />
+                  <p class="card-list-text">برندگان جوایز فیلم بفتا 2021؛ Nomadland بهترین فیلم سال</p>
+                </div>
+                <div class="card-list">
+                  <img src="img/card-list/dimitrescu.jpg" />
+                  <p class="card-list-text">ضرورت تکنولوژی صدای سه بعدی PS5 در آینده‌ی بازی‌ های ترسناک</p>
+                </div>
+                <div class="card-list">
+                  <img src="img/card-list/outriders2.jpg" />
+                  <p class="card-list-text">آپدیت بعدی Outriders برای رفع مشکل کراس پلی بازی</p>
+                </div>
+              </div>
+
+              <div class="card card-header" style="box-shadow: none">
+                <h4>اخبار سینما</h4>
+              </div>
+
+              <div class="card">
+                <div class="card-img">
+                  <img src="img/left-side/blackwidow.jpg" alt="gta-doc" />
+                </div>
+                <p class="card-text">تاریخ اکران فیلم Black Widow و The Eternals فاش شد</p>
+              </div>
+
+              <div class="card">
+                <div class="card-img">
+                  <img src="img/left-side/terminator.jpg" alt="gta-doc" />
+                </div>
+                <p class="card-text">تاریخ اکران فیلم Terminator 6 بار دیگر تغییر کرد</p>
+              </div>
+
+              <div class="card">
+                <div class="card-img">
+                  <img src="img/left-side/interstellar.jpg" alt="interstellar" />
+                </div>
+                <p class="card-text">نقدر فیلم Interstellar</p>
+              </div>
             </div>
-            <div class="card-img">
-              <img src="img/main-post/Blair-Witch.jpg" alt="Bair-Witch"/>
+          </aside>
+
+          <main>
+            <div class="col-6" id="col-main">
+              <h4 class="card card-header">جدید‌ترین مطالب</h4>
+
+              <article>
+                <div class="card">
+                  <div class="card-tags">
+                    <div class="card-tag">XBOX ONE</div>
+                    <div class="card-tag">WITCHER3</div>
+                    <div class="card-tag">PC</div>
+                  </div>
+                  <div class="card-img">
+                    <img src="img/main-post/witcher3.jpg" alt="Witcher 3" />
+                  </div>
+                  <h3 class="card-title">تخفیف50درصدی بازیهای استیم به مناسبت جمعه سیاه</h3>
+                  <h5 class="card-subtitle">Title description, Nov 30, 2018</h5>
+                  <p class="card-text">
+                    در جریان رویداد بلک فرایدی، دو بازی Red Dead Redemption 2 و Call of Duty: Black Ops 4، عامل اصلی رشد خریدهای دیجیتالی
+                    کاربران بوده‌اند.
+                  </p>
+                  <div class="card-footer">
+                    <i class="fa fa-user"> Milad</i>
+                    <i class="fa fa-comments-o"> 6</i>
+                    <i class="fa fa-heart-o"> 22</i>
+                  </div>
+                </div>
+              </article>
+
+              <article>
+                <div class="card">
+                  <div class="card-tags">
+                    <div class="card-tag">DOOM ETERNAL</div>
+                    <div class="card-tag">PC</div>
+                  </div>
+                  <div class="card-img">
+                    <img src="img/main-post/doom-eternal.jpg" alt="DOOM" />
+                  </div>
+                  <h3 class="card-title">بازگشت هیجان و دیوانگی مروری بر نقدها Doom Eternal</h3>
+                  <h5 class="card-subtitle">Title description, Dec 7, 2018</h5>
+                  <p class="card-text">
+                    بازگشت هیجان و دیوانگی. مروری بر نقدها و نمرات بازی doom enternal. کمپانی bethesda با یکی از بهترین و هیجان انگیز ترید
+                    بازی شوتر برمیگردد.
+                  </p>
+                  <div class="card-footer">
+                    <i class="fa fa-user"> Milad</i>
+                    <i class="fa fa-comments-o"> 2</i>
+                    <i class="fa fa-heart-o"> 5</i>
+                  </div>
+                </div>
+              </article>
+
+              <article>
+                <div class="card">
+                  <h3 class="card-title">بررسی بازی Red Dead Redemption 2</h3>
+                  <h5 class="card-subtitle">Title description, Dec 7, 2018</h5>
+                  <div class="row card-row">
+                    <div class="col-8">
+                      <p class="card-text">
+                        راک‌استار گیمز همیشه هنرش را در شگفت‌زده کردن مخاطبان نشان داده است؛ چه وقتی که با نسخه‌های اول GTA یک تجربه
+                        جهان‌باز بی‌مانند تا آن زمان را ارائه کرد.
+                      </p>
+                    </div>
+                    <div class="col-4">
+                      <div class="card-img">
+                        <img src="img/main-post/reddead.jpg" alt="Red dead 2" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <i class="fa fa-user"> Milad</i>
+                    <i class="fa fa-comments-o"> 12</i>
+                    <i class="fa fa-heart-o"> 45</i>
+                  </div>
+                </div>
+              </article>
+
+              <article>
+                <div class="card">
+                  <div class="card-tags">
+                    <div class="card-tag">BLAIR WITCH</div>
+                    <div class="card-tag">NINTENDO</div>
+                    <div class="card-tag">PS4</div>
+                  </div>
+                  <div class="card-img">
+                    <img src="img/main-post/Blair-Witch.jpg" alt="Bair-Witch" />
+                  </div>
+                  <h3 class="card-title">بازی Blair Witch برروی نینتندو سوییچ منتشر خواهد شد</h3>
+                  <h5 class="card-subtitle">Title description, Sep 2, 2018</h5>
+                  <p class="card-text">
+                    تیم سازنده‌ی Blair Witch امروز در خبر خوبی از انتشار این بازی برروی کنسول نینتندو سوییچ خبر داد. همچنین تریلری از این
+                    نسخه در دسترس قرار گرفته است که در ادامه می‌توانید شاهد آن باشید.
+                  </p>
+                  <div class="card-footer">
+                    <i class="fa fa-user"> Milad</i>
+                    <i class="fa fa-comments-o"> 7</i>
+                    <i class="fa fa-heart-o"> 35</i>
+                  </div>
+                </div>
+              </article>
             </div>
-            <h3 class="card-title"> بازی Blair Witch برروی نینتندو سوییچ منتشر خواهد شد </h3>
-            <h5 class="card-subtitle">Title description, Sep 2, 2018</h5>
-            <p class="card-text">
-              تیم سازنده‌ی Blair Witch امروز در خبر خوبی از انتشار این بازی برروی کنسول نینتندو سوییچ خبر داد. همچنین تریلری از این نسخه در دسترس قرار گرفته است که در ادامه می‌توانید شاهد آن باشید.
-            </p>
-            <div class="card-footer">
-              <i class="fa fa-user"> Milad</i>
-              <i class="fa fa-comments-o"> 7</i>
-              <i class="fa fa-heart-o"> 35</i>
+          </main>
+
+          <aside>
+            <div class="col-3">
+              <div class="card card-header">
+                <h4>پست های پر بازدید</h4>
+              </div>
+
+              <div class="card">
+                <div class="card-tags">
+                  <div class="card-tag">گیم پلی</div>
+                  <div class="card-tag">XBOX</div>
+                </div>
+                <div class="cad-img">
+                  <img src="img/right-side/anthem.jpg" alt="Anthem" />
+                </div>
+                <p class="card-text">گیم‌پلی بازی anthem به صورت کوآپ مولتی‌پلیر خواهد بود</p>
+                <div class="card-footer">
+                  <i class="fa fa-comments-o"> 1</i>
+                  <i class="fa fa-heart-o"> 4</i>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-tags">
+                  <div class="card-tag">اخبار</div>
+                  <div class="card-tag">بررسی</div>
+                </div>
+                <div class="card-img">
+                  <img src="img/right-side/callOfDutyWW2.jpg" alt="COD WW2" />
+                </div>
+                <p class="card-text">Call of duty به جنگ جهانی دوم باز خواهد گشت</p>
+                <div class="card-footer">
+                  <i class="fa fa-comments-o"> 5</i>
+                  <i class="fa fa-heart" style="color: CRIMSON"> 12</i>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-tags">
+                  <div class="card-tag">بررسی</div>
+                  <div class="card-tag">PC</div>
+                </div>
+                <div class="card-img">
+                  <img src="img/right-side/cod-bo3.jpg" alt="blackops" />
+                </div>
+                <p class="card-text">بررسی بازی Call of Duty: Black ops 4</p>
+                <div class="card-footer">
+                  <i class="fa fa-comments-o"> 0</i>
+                  <i class="fa fa-heart-o"> 1</i>
+                </div>
+              </div>
+
+              <div class="card card-header" style="box-shadow: none">
+                <h4>اخبار</h4>
+              </div>
+
+              <div class="card">
+                <div class="card-tags">
+                  <div class="card-tag">تریلر</div>
+                </div>
+                <div class="card-img">
+                  <img src="img/right-side/reddead-re.jpg" alt="blackops" />
+                </div>
+                <p class="card-text">تریلر جدید بازی Red Dead Redemption 2 منتشر شد</p>
+                <div class="card-footer">
+                  <i class="fa fa-comments-o"> 15</i>
+                  <i class="fa fa-heart-o"> 21</i>
+                </div>
+              </div>
+
+              <div class="card">
+                <h4 class="card-list-title">بررسی بازی</h4>
+                <div class="card-list">
+                  <img src="img/card-list/PS5.jpg" />
+                  <p class="card-list-text">تاریخ رونمایی از کنسول پلی‌استیشن ۵ رسما مشخص شد</p>
+                </div>
+                <div class="card-list">
+                  <img src="img/card-list/BF6.jpg" />
+                  <p class="card-list-text">اشاره شایعات جدید Battlefield 6 به پشتیبانی از ۱۲۸ بازیکن در هر بازی</p>
+                </div>
+                <div class="card-list">
+                  <img src="img/card-list/MGSV.jpg" />
+                  <p class="card-list-text">احتمال واگذاری لایسنس بازی Metal Gear Solid توسط کونامی</p>
+                </div>
+                <div class="card-list">
+                  <img src="img/card-list/outriders.jpg" />
+                  <p class="card-list-text">جدول فروش هفتگی انگلستان: خروج Outriders از جمع ۱۰ بازی پرفروش</p>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <!-- <section>
+          <div class="poster-container owl-carousel">
+            <div class="poster" style="width: 200px">
+              <div class="img-container">
+                <img src="img/poster/poster1.jpg" alt="poster1" />
+              </div>
+            </div>
+            <div class="poster" style="width: 200px">
+              <div class="img-container">
+                <img src="img/poster/poster2.jpg" alt="poster2" />
+              </div>
+            </div>
+            <div class="poster" style="width: 200px">
+              <div class="img-container">
+                <img src="img/poster/poster3.jpg" alt="poster3" />
+              </div>
+            </div>
+            <div class="poster" style="width: 200px">
+              <div class="img-container">
+                <img src="img/poster/poster4.jpg" alt="poster4" />
+              </div>
+            </div>
+            <div class="poster" style="width: 200px">
+              <div class="img-container">
+                <img src="img/poster/poster5.jpg" alt="poster5" />
+              </div>
             </div>
           </div>
-        </article>
-
+        </section> -->
       </div>
-    </main>
 
-    <aside>
-      <div class="col-3">
-      
-        <div class="card card-header">
-          <h4> پست های پر بازدید </h4>
-        </div>
-
-        <div class="card">
-          <div class="card-tags">
-            <div class="card-tag">گیم پلی</div>
-            <div class="card-tag">XBOX</div>
-          </div>
-          <div class="cad-img">
-            <img src="img/right-side/anthem.jpg" alt="Anthem">
-          </div>
-          <p class="card-text"> گیم‌پلی بازی anthem به صورت کوآپ مولتی‌پلیر خواهد بود </p> 
-          <div class="card-footer">
-            <i class="fa fa-comments-o"> 1</i>
-            <i class="fa fa-heart-o"> 4</i>
-          </div>
-        </div> 
-        
-        <div class="card">
-          <div class="card-tags">
-            <div class="card-tag">اخبار</div>
-            <div class="card-tag">بررسی</div>
-          </div>
-          <div class="card-img">
-            <img src="img/right-side/callOfDutyWW2.jpg" alt="COD WW2">
-          </div>
-          <p class="card-text">Call of duty به جنگ جهانی دوم باز خواهد گشت </p>  
-          <div class="card-footer">
-            <i class="fa fa-comments-o"> 5</i>
-            <i class="fa fa-heart" style="color:CRIMSON;"> 12</i>
-          </div>
-        </div>
-
-        <div class="card" >
-          <div class="card-tags">
-            <div class="card-tag">بررسی</div>
-            <div class="card-tag">PC</div>
-          </div>
-          <div class="card-img">
-            <img src="img/right-side/cod-bo3.jpg" alt="blackops">
-          </div>
-          <p class="card-text"> بررسی بازی Call of Duty: Black ops 4 </p>
-          <div class="card-footer">
-            <i class="fa fa-comments-o"> 0</i>
-            <i class="fa fa-heart-o"> 1</i>
-          </div> 
-        </div>
-      
-        <div class="card card-header" style="box-shadow:none">
-            <h4> اخبار </h4>
-        </div>
-      
-        <div class="card">
-          <div class="card-tags">
-            <div class="card-tag">تریلر</div>
-          </div>
-            <div class="card-img">
-              <img src="img/right-side/reddead-re.jpg" alt="blackops">
-            </div>
-            <p class="card-text">   تریلر جدید بازی Red Dead Redemption 2 منتشر شد </p>
-            <div class="card-footer">
-              <i class="fa fa-comments-o"> 15</i>
-              <i class="fa fa-heart-o"> 21</i>
-            </div>
-        </div>
-        
-        <!-- <div class="card">
-          <div class="card-img">
-            <img src="img/right-side/spiderman.jpg" alt="red dead 2">
-          </div>
-          <p class="card-text"> Spider Man از فردا برای پری لود در دسترس خواهد بود </p>
-          <div class="card-footer">
-            <i class="fa fa-comments-o"> 2</i>
-            <i class="fa fa-heart-o"> 5</i>
-          </div>
-        </div> -->
-
-        <div class="card">
-          <h4 class="card-list-title">بررسی بازی</h4>
-          <div class="card-list">
-            <img src="img/card-list/PS5.jpg">
-            <p class="card-list-text">تاریخ رونمایی از کنسول پلی‌استیشن ۵ رسما مشخص شد</p>
-          </div>
-          <div class="card-list">
-            <img src="img/card-list/BF6.jpg">
-            <p class="card-list-text">اشاره شایعات جدید Battlefield 6 به پشتیبانی از ۱۲۸ بازیکن در هر بازی</p>
-          </div>
-          <div class="card-list">
-            <img src="img/card-list/MGSV.jpg">
-            <p class="card-list-text">احتمال واگذاری لایسنس بازی Metal Gear Solid توسط کونامی</p>
-          </div>
-          <div class="card-list">
-            <img src="img/card-list/outriders.jpg">
-            <p class="card-list-text">جدول فروش هفتگی انگلستان: خروج Outriders از جمع ۱۰ بازی پرفروش</p>
-          </div>
-        </div>  
-
+      <div class="pagination">
+        <a class="pag-link next-page" href="#blank">
+          <i class="fa fa-chevron-left"></i>
+        </a>
+        <a class="pag-link" href="#blank">5</a>
+        <a class="pag-link" href="#blank">4</a>
+        <a class="pag-link" href="#blank">3</a>
+        <a class="pag-link" href="#blank">2</a>
+        <a class="pag-link" href="#blank">1</a>
+        <a class="pag-link previous-page" href="#blank">
+          <i class="fa fa-chevron-right"></i>
+        </a>
       </div>
 
-    </aside>
-
-  </div>
-
-</div>
-
-<div class="pagination">
-  <a class="pag-link next-page" href="#blank">
-    <i class="fa fa-chevron-left"></i>
-  </a>
-  <a class="pag-link" href="#blank">5</a>
-  <a class="pag-link" href="#blank">4</a>
-  <a class="pag-link" href="#blank">3</a>
-  <a class="pag-link" href="#blank">2</a>
-  <a class="pag-link" href="#blank">1</a>
-  <a class="pag-link previous-page" href="#blank">
-    <i class="fa fa-chevron-right"></i>
-  </a>
-</div>
-
-<footer class="mt-20">
-
-  <div class="page-wrap">
-
-    <div class="row">
-
-      <div class="col-3">
-        <h3 class="footer-title"> بهترین مطالب هفته </h3>
-        <!-- <span class="footer-list">
+      <footer class="mt-20">
+        <div class="page-wrap">
+          <div class="row">
+            <div class="col-3">
+              <h3 class="footer-title">بهترین مطالب هفته</h3>
+              <!-- <span class="footer-list">
           <i class="fa fa-star"> بررسی بازی Call of Duty: Black ops 4 </i> 
         </span> -->
-        <span class="footer-list">
-          <i class="fa fa-star"> </i> والت شماره ۷۶ کجاست و چه انتظاری باید از این بازی داشته باشیم 
-        </span>
-        <span class="footer-list">
-          <i class="fa fa-star"> </i>  بررسی بازی Red Dead Redemption 2 
-        </span>
-        <span class="footer-list">
-          <i class="fa fa-star"> </i> تخفیف50درصدی بازیهای استیم به مناسبت جمعه سیاه
-        </span>
-      </div>
+              <span class="footer-list"> <i class="fa fa-star"> </i> والت شماره ۷۶ کجاست و چه انتظاری باید از این بازی داشته باشیم </span>
+              <span class="footer-list"> <i class="fa fa-star"> </i> بررسی بازی Red Dead Redemption 2 </span>
+              <span class="footer-list"> <i class="fa fa-star"> </i> تخفیف50درصدی بازیهای استیم به مناسبت جمعه سیاه </span>
+            </div>
 
-      <div class="col-3" >
-        <h3 class="footer-title"> ارتباط </h3>
-        <span class="footer-list"><i class="fa fa-home"> </i> اصفهان - فولادشهر </span>
-        <span class="footer-list"><i class="fa fa-envelope"> </i> imgh2013@gmial.com </span>
-        <span class="footer-list"><i class="fa fa-phone"> </i> 09138724802 </span>
-        <span class="footer-list"><i class="fa fa-fax"> </i> 09138724802 </span>
-      </div>
+            <div class="col-3">
+              <h3 class="footer-title">ارتباط</h3>
+              <span class="footer-list"><i class="fa fa-home"> </i> اصفهان - فولادشهر </span>
+              <span class="footer-list"><i class="fa fa-envelope"> </i> imgh2013@gmial.com </span>
+              <span class="footer-list"><i class="fa fa-phone"> </i> 09138724802 </span>
+              <span class="footer-list"><i class="fa fa-fax"> </i> 09138724802 </span>
+            </div>
 
-      <div class="col-3">
-        <h3 class="footer-title">خدمات</h3>
-        <p class="footer-list"> طراحی سایت </p>
-        <p class="footer-list"> طراحی اپلیکیشن </p>
-        <p class="footer-list"> آموزش وردپرس </p>
-        <p class="footer-list"> آموزش برنامه‌نویسی </p>
-      </div>
-      
-      <div class="col-3">
-        <h3 class="footer-title">آخرین نظر ها</h3>
-        <span class="footer-list">
-          <i class="fa fa-comment"> </i> بسیار عالی ! ممنون. 
-        </span>
-        <span class="footer-list">
-          <i class="fa fa-comment"> </i> سری بازی های Battlefield واقعا بهترینه
-        </span>
-        <span class="footer-list">
-          <i class="fa fa-comment"> </i> لطفا بازی fallout 76 رو هم نقد کنید
-        </span>
-        <span class="footer-list">
-          <i class="fa fa-comment"> </i> مرسی خسته نباشید !
-        </span>
-        
-      </div>
+            <div class="col-3">
+              <h3 class="footer-title">خدمات</h3>
+              <p class="footer-list">طراحی سایت</p>
+              <p class="footer-list">طراحی اپلیکیشن</p>
+              <p class="footer-list">آموزش وردپرس</p>
+              <p class="footer-list">آموزش برنامه‌نویسی</p>
+            </div>
 
-    </div>
+            <div class="col-3">
+              <h3 class="footer-title">آخرین نظر ها</h3>
+              <span class="footer-list"> <i class="fa fa-comment"> </i> بسیار عالی ! ممنون. </span>
+              <span class="footer-list"> <i class="fa fa-comment"> </i> سری بازی های Battlefield واقعا بهترینه </span>
+              <span class="footer-list"> <i class="fa fa-comment"> </i> لطفا بازی fallout 76 رو هم نقد کنید </span>
+              <span class="footer-list"> <i class="fa fa-comment"> </i> مرسی خسته نباشید ! </span>
+            </div>
+          </div>
 
-    <hr class="footer-hr">
-  
-    <div style="text-align:center;" dir="ltr">
-      <h2 class="footer-website-name">vgwebsite</h2>
-      <p class="footer-copy-right"> آخرین اخبار سینما و دنیای بازی های ویدیویی به همراه نقد و بررسی بازی های برتر <br> &copy;2019 expgames.ir All Rights Reserved. Designed by Milad gharibi.
-      </p>
-    </div>
+          <hr class="footer-hr" />
 
-  </div>
+          <div style="text-align: center" dir="ltr">
+            <h2 class="footer-website-name">vgwebsite</h2>
+            <p class="footer-copy-right">
+              آخرین اخبار سینما و دنیای بازی های ویدیویی به همراه نقد و بررسی بازی های برتر <br />
+              &copy;2019 expgames.ir All Rights Reserved. Designed by Milad gharibi.
+            </p>
+          </div>
+        </div>
 
-  <div class="social-media mt-20">
-    <div class="social-icon"><i class="fa fa-instagram"></i></div>
-    <div class="social-icon"><i class="fa fa-twitter"></i></div>
-    <div class="social-icon"><i class="fa fa-github"></i></div>
-    <div class="social-icon"><i class="fa fa-linkedin"></i></div>
-  </div>
+        <div class="social-media mt-20">
+          <div class="social-icon"><i class="fa fa-instagram"></i></div>
+          <div class="social-icon"><i class="fa fa-twitter"></i></div>
+          <div class="social-icon"><i class="fa fa-github"></i></div>
+          <div class="social-icon"><i class="fa fa-linkedin"></i></div>
+        </div>
+      </footer>
 
-</footer>
-
-<script src="carousel.js"></script>
-
-</body>
-
+      <!-- jQuery -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <!-- owlCarousel JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+      <!-- script -->
+      <script src="carousel.js"></script>
+    </body>
+  </html>
 </html>
