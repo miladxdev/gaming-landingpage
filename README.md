@@ -12,7 +12,7 @@
     <img src="img/logo/d3-logo.svg" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">VG Landingpage</h3>
+  <h3 align="center">video game Landing page</h3>
 
   <p align="center">
     responsive video game  landing page ( magazine )
@@ -28,51 +28,23 @@
   </p>
 </p>
 
-<!-- TABLE OF CONTENTS -->
-<details >
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
-  </ol>
-</details>
+<br>
 
-<!-- ABOUT THE PROJECT -->
+[![Product Name Screen Shot][product-screenshot]](https://miladxdev.github.io/gaming-landingpage/)
+
+## [LIVE DEMO ☝](https://miladxdev.github.io/gaming-landingpage/)
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://miladxdev.github.io/gaming-landingpage/)
 This progect is a simple landing page about video games. its fully responsive for smartphones, tablets and desktop computers. click on the screenshot to see live preview of the website.<hr>
 
 ### Built With
 
-- html
-- CSS
-- JavaScript
+- `html`
+- `CSS`
+- `JavaScript`
 <br>
 <!-- ROADMAP -->
-
-## Roadmap
-
-See the [open issues](https://github.com/miladxdev/gaming-landingpage/issues) for a list of proposed features (and known issues).
-<br>
 
 <!-- CONTRIBUTING -->
 
@@ -80,12 +52,19 @@ See the [open issues](https://github.com/miladxdev/gaming-landingpage/issues) fo
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-   <br>
+1- Fork the Project
+
+2- Create your Feature Branch
+`git checkout -b feature/AmazingFeature`
+
+3- Commit your Changes
+
+`git commit -m 'Add some AmazingFeature'`
+
+4- Push to the Branch
+`git push origin feature/AmazingFeature`
+
+5- Open a Pull Request
 
 <!-- LICENSE -->
 
@@ -98,7 +77,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Milad Gharibi - [@your_twitter](https://twitter.com/your_username) - miladxgh@gmail.com
+`Milad Gharibi`
+Email: miladxdev@gmail.com
 
 Project Link: [github.com/miladxdev/gaming-landingpage](https://github.com/miladxdev/gaming-landingpage)
 
@@ -123,5 +103,5 @@ Project Link: [github.com/miladxdev/gaming-landingpage](https://github.com/milad
 [license-shield]: https://img.shields.io/github/license/miladxdev/gaming-landingpage.svg?style=for-the-badge
 [license-url]: https://github.com/miladxdev/gaming-landingpage/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://www.linkedin.com/in/milad-gharibi-507ba3214/
+[linkedin-url]: https://www.linkedin.com/in/itsmilad/
 [product-screenshot]: img/screenshot.jpg
