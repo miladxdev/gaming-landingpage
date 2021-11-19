@@ -34,9 +34,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://miladxdev.github.io/gaming-landingpage/)
 
-## [LIVE DEMO ☝](https://miladxdev.github.io/gaming-landingpage/)
-
-## About The Project
+### [LIVE DEMO ☝](https://miladxdev.github.io/gaming-landingpage/)
 
 This progect is a simple landing page about video games. its fully responsive for smartphones, tablets and desktop computers. click on the screenshot to see live preview of the website.
 
