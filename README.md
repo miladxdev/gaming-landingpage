@@ -30,20 +30,22 @@
 
 <br>
 
+`screenshot`
+
 [![Product Name Screen Shot][product-screenshot]](https://miladxdev.github.io/gaming-landingpage/)
 
 ## [LIVE DEMO ☝](https://miladxdev.github.io/gaming-landingpage/)
 
 ## About The Project
 
-This progect is a simple landing page about video games. its fully responsive for smartphones, tablets and desktop computers. click on the screenshot to see live preview of the website.<hr>
+This progect is a simple landing page about video games. its fully responsive for smartphones, tablets and desktop computers. click on the screenshot to see live preview of the website.
 
 ### Built With
 
 - `html`
 - `CSS`
 - `JavaScript`
-<br>
+
 <!-- ROADMAP -->
 
 <!-- CONTRIBUTING -->
@@ -55,6 +57,7 @@ Contributions are what make the open source community such an amazing place to b
 1- Fork the Project
 
 2- Create your Feature Branch
+
 `git checkout -b feature/AmazingFeature`
 
 3- Commit your Changes
@@ -62,6 +65,7 @@ Contributions are what make the open source community such an amazing place to b
 `git commit -m 'Add some AmazingFeature'`
 
 4- Push to the Branch
+
 `git push origin feature/AmazingFeature`
 
 5- Open a Pull Request
@@ -71,7 +75,6 @@ Contributions are what make the open source community such an amazing place to b
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
-<br>
 
 <!-- CONTACT -->
 
@@ -88,9 +91,6 @@ Project Link: [github.com/miladxdev/gaming-landingpage](https://github.com/milad
 
 - [GitHub Pages](https://pages.github.com)
 - [Font Awesome](https://fontawesome.com)
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
 [contributors-shield]: https://img.shields.io/github/contributors/miladxdev/gaming-landingpage.svg?style=for-the-badge
 [contributors-url]: https://github.com/miladxdev/gaming-landingpage/graphs/contributors
